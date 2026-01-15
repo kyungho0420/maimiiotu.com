@@ -1,0 +1,14 @@
+/*
+    Theme: MAI MI IOTU - Minimal White
+*/
+
+:root {
+    /* Only standard PV4 overrides allowed */
+    --pv-color-primary: #000000;
+    --pv-color-secondary: #495057;
+    --pv-color-surface: #F8F9FA;
+    --pv-color-text: #212529;
+    --pv-font-body: 'Noto Sans KR', sans-serif;
+    --pv-bg-button: var(--pv-color-primary);
+    --pv-text-button: #FFFFFF;
+}
