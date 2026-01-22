@@ -18,17 +18,17 @@
     <link rel="canonical" href="https://www.maimiiotu.com/">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
-    <!-- [Tier 1] Provider Core -->
-    <link rel="stylesheet" href="https://cdn.dam.so/_inc/provider/v4/core/core.css">
-    <script src="https://cdn.dam.so/_inc/provider/v4/core/core.js"></script>
+    <!-- [Tier 1] Damso Express Core -->
+    <link rel="stylesheet" href="https://cdn.dam.so/_inc/express/v4/core/core.css">
+    <script src="https://cdn.dam.so/_inc/express/v4/core/core.js"></script>
 
-    <!-- [Tier 2] Provider View -->
-    <link rel="stylesheet" href="https://cdn.dam.so/_inc/provider/v4/view/page.css">
-    <script src="https://cdn.dam.so/_inc/provider/v4/view/page.js"></script>
+    <!-- [Tier 2] Damso Express View -->
+    <link rel="stylesheet" href="https://cdn.dam.so/_inc/express/v4/view/page.css">
+    <script src="https://cdn.dam.so/_inc/express/v4/view/page.js"></script>
 
     <!-- [Tier 2.5] Plug-ins (Canvas) -->
-    <link rel="stylesheet" href="https://cdn.dam.so/_inc/provider/v4/plug/canvas/canvas.css">
-    <script src="https://cdn.dam.so/_inc/provider/v4/plug/canvas/canvas.js"></script>
+    <link rel="stylesheet" href="https://cdn.dam.so/_inc/express/v4/plug/canvas/canvas.css">
+    <script src="https://cdn.dam.so/_inc/express/v4/plug/canvas/canvas.js"></script>
 
     <!-- [Tier 3] User Custom -->
     <link rel="stylesheet" href="./lay.css">
@@ -38,10 +38,10 @@
 <body>
 
     <!-- 0. Navigation (Added) -->
-    <nav class="pv-nav">
-        <div class="pv-nav__container">
-            <a href="#home" class="pv-nav__logo">MAI MI IOTU</a>
-            <div class="pv-nav__buttons">
+    <nav class="damso-nav">
+        <div class="damso-nav__container">
+            <a href="#home" class="damso-nav__logo">MAI MI IOTU</a>
+            <div class="damso-nav__buttons">
                 <div id="lang-switcher">
                     <button data-lang-set="ko" class="active">KO</button>
                     <button data-lang-set="en">EN</button>
@@ -53,33 +53,33 @@
     </nav>
 
     <!-- 1. Overview (Header) -->
-    <header id="home" class="pv-header">
-        <div class="pv-header__content js-parallax-content">
-            <h1 class="pv-header__title"><strong>MAI MI IOTU</strong></h1>
-            <p class="pv-header__description" data-lang="home_description">Nhà máy sản xuất lông mi giả số lượng lớn</p>
+    <header id="home" class="damso-header">
+        <div class="damso-header__content js-parallax-content">
+            <h1 class="damso-header__title"><strong>MAI MI IOTU</strong></h1>
+            <p class="damso-header__description" data-lang="home_description">Nhà máy sản xuất lông mi giả số lượng lớn</p>
         </div>
     </header>
 
     <main>
         <!-- 2. Services -->
-        <section id="services" class="pv-section js-fade-in">
-            <div class="pv-container">
-                <h2 class="pv-section__title" data-lang="services_title">
+        <section id="services" class="damso-section js-fade-in">
+            <div class="damso-container">
+                <h2 class="damso-section__title" data-lang="services_title">
                     <span translate="no" class="material-symbols-outlined notranslate">factory</span>
                     Kinh doanh chính
                 </h2>
-                <p class="pv-section__description" data-lang="services_desc"></p>
-                <div class="pv-grid pv-grid--cols-2">
-                    <div class="pv-card">
-                        <div class="pv-card__content">
-                            <h3 class="pv-card__title" data-lang="service_01_title"></h3>
-                            <p class="pv-card__description" data-lang="service_01_desc"></p>
+                <p class="damso-section__description" data-lang="services_desc"></p>
+                <div class="damso-grid damso-grid--cols-2">
+                    <div class="damso-card">
+                        <div class="damso-card__content">
+                            <h3 class="damso-card__title" data-lang="service_01_title"></h3>
+                            <p class="damso-card__description" data-lang="service_01_desc"></p>
                         </div>
                     </div>
-                    <div class="pv-card">
-                        <div class="pv-card__content">
-                            <h3 class="pv-card__title" data-lang="service_02_title"></h3>
-                            <p class="pv-card__description" data-lang="service_02_desc"></p>
+                    <div class="damso-card">
+                        <div class="damso-card__content">
+                            <h3 class="damso-card__title" data-lang="service_02_title"></h3>
+                            <p class="damso-card__description" data-lang="service_02_desc"></p>
                         </div>
                     </div>
                 </div>
@@ -87,48 +87,48 @@
         </section>
 
         <!-- 3. Portfolio (Products) -->
-        <section id="portfolio" class="pv-section pv-section--secondary js-fade-in">
-            <div class="pv-container">
-                <h2 class="pv-section__title" data-lang="portfolio_title">
+        <section id="portfolio" class="damso-section damso-section--secondary js-fade-in">
+            <div class="damso-container">
+                <h2 class="damso-section__title" data-lang="portfolio_title">
                     <span translate="no" class="material-symbols-outlined notranslate">inventory_2</span>
                     Sản phẩm chính
                 </h2>
-                <p class="pv-section__description" data-lang="portfolio_desc"></p>
-                <div class="pv-grid pv-grid--cols-2">
-                    <div class="pv-card">
-                        <div class="pv-card__image-wrapper js-lightbox-trigger">
-                            <img src="./section/product1.jpg" alt="Classic Lash" class="pv-card__image">
+                <p class="damso-section__description" data-lang="portfolio_desc"></p>
+                <div class="damso-grid damso-grid--cols-2">
+                    <div class="damso-card">
+                        <div class="damso-card__image-wrapper js-lightbox-trigger">
+                            <img src="./section/product1.jpg" alt="Classic Lash" class="damso-card__image">
                         </div>
-                        <div class="pv-card__content">
-                            <h4 class="pv-card__title" data-lang="portfolio_01_title"></h4>
-                            <p class="pv-card__description" data-lang="portfolio_01_desc"></p>
-                        </div>
-                    </div>
-                    <div class="pv-card">
-                        <div class="pv-card__image-wrapper js-lightbox-trigger">
-                            <img src="./section/product2.jpg" alt="Volume Lash" class="pv-card__image">
-                        </div>
-                        <div class="pv-card__content">
-                            <h4 class="pv-card__title" data-lang="portfolio_02_title"></h4>
-                            <p class="pv-card__description" data-lang="portfolio_02_desc"></p>
+                        <div class="damso-card__content">
+                            <h4 class="damso-card__title" data-lang="portfolio_01_title"></h4>
+                            <p class="damso-card__description" data-lang="portfolio_01_desc"></p>
                         </div>
                     </div>
-                    <div class="pv-card">
-                        <div class="pv-card__image-wrapper js-lightbox-trigger">
-                            <img src="./section/product3.jpg" alt="Special Lash" class="pv-card__image">
+                    <div class="damso-card">
+                        <div class="damso-card__image-wrapper js-lightbox-trigger">
+                            <img src="./section/product2.jpg" alt="Volume Lash" class="damso-card__image">
                         </div>
-                        <div class="pv-card__content">
-                            <h4 class="pv-card__title" data-lang="portfolio_03_title"></h4>
-                            <p class="pv-card__description" data-lang="portfolio_03_desc"></p>
+                        <div class="damso-card__content">
+                            <h4 class="damso-card__title" data-lang="portfolio_02_title"></h4>
+                            <p class="damso-card__description" data-lang="portfolio_02_desc"></p>
                         </div>
                     </div>
-                    <div class="pv-card">
-                        <div class="pv-card__image-wrapper js-lightbox-trigger">
-                            <img src="./section/product4.jpg" alt="Color Lash" class="pv-card__image">
+                    <div class="damso-card">
+                        <div class="damso-card__image-wrapper js-lightbox-trigger">
+                            <img src="./section/product3.jpg" alt="Special Lash" class="damso-card__image">
                         </div>
-                        <div class="pv-card__content">
-                            <h4 class="pv-card__title" data-lang="portfolio_04_title"></h4>
-                            <p class="pv-card__description" data-lang="portfolio_04_desc"></p>
+                        <div class="damso-card__content">
+                            <h4 class="damso-card__title" data-lang="portfolio_03_title"></h4>
+                            <p class="damso-card__description" data-lang="portfolio_03_desc"></p>
+                        </div>
+                    </div>
+                    <div class="damso-card">
+                        <div class="damso-card__image-wrapper js-lightbox-trigger">
+                            <img src="./section/product4.jpg" alt="Color Lash" class="damso-card__image">
+                        </div>
+                        <div class="damso-card__content">
+                            <h4 class="damso-card__title" data-lang="portfolio_04_title"></h4>
+                            <p class="damso-card__description" data-lang="portfolio_04_desc"></p>
                         </div>
                     </div>
                 </div>
@@ -136,44 +136,44 @@
         </section>
 
         <!-- 4. Location -->
-        <section id="location" class="pv-section">
-            <div class="pv-container js-fade-in">
+        <section id="location" class="damso-section">
+            <div class="damso-container js-fade-in">
                 <h2><span translate="no" class="material-symbols-outlined notranslate">location_on</span><span
                         data-lang="section_location_title"></span></h2>
-                <p class="pv-section__description" data-lang="section_location_desc_reservation"></p>
-                <div class="pv-card">
+                <p class="damso-section__description" data-lang="section_location_desc_reservation"></p>
+                <div class="damso-card">
                     <!-- Google Map Embed Placeholder -->
                     <iframe
                         src="https://maps.google.com/maps?q=573%20Ho%20Van%20Cong%2CTuong%20Binh%20Hiep%2CThu%20Dau%20Mot%2CBinh%20Duong%2CVietnam&t=&z=15&ie=UTF8&iwloc=&output=embed"
                         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="pv-address-block">
+                <div class="damso-address-block">
                     <p data-lang="address_text"></p>
                 </div>
             </div>
         </section>
 
         <!-- 5. Profile -->
-        <section id="profile" class="pv-section pv-section--secondary js-fade-in">
-            <div class="pv-container">
-                <h2 class="pv-section__title" data-lang="profile_title">
+        <section id="profile" class="damso-section damso-section--secondary js-fade-in">
+            <div class="damso-container">
+                <h2 class="damso-section__title" data-lang="profile_title">
                     <span translate="no" class="material-symbols-outlined notranslate">domain</span>
                     Profile
                 </h2>
-                <p class="pv-section__description" data-lang="profile_desc"></p>
+                <p class="damso-section__description" data-lang="profile_desc"></p>
 
-                <div class="pv-profile-list">
-                    <div class="pv-profile-list__item">
-                        <strong class="pv-profile-list__label" data-lang="profile_label_name">Name</strong>
-                        <span class="pv-profile-list__value" data-lang="name_text">Yoon Seok-hoon</span>
+                <div class="damso-profile-list">
+                    <div class="damso-profile-list__item">
+                        <strong class="damso-profile-list__label" data-lang="profile_label_name">Name</strong>
+                        <span class="damso-profile-list__value" data-lang="name_text">Yoon Seok-hoon</span>
                     </div>
-                    <div class="pv-profile-list__item">
-                        <strong class="pv-profile-list__label" data-lang="profile_label_phone">Phone</strong>
-                        <a href="tel:+84862008886" class="pv-profile-list__value">(+84) 086-200-8886</a>
+                    <div class="damso-profile-list__item">
+                        <strong class="damso-profile-list__label" data-lang="profile_label_phone">Phone</strong>
+                        <a href="tel:+84862008886" class="damso-profile-list__value">(+84) 086-200-8886</a>
                     </div>
-                    <div class="pv-profile-list__item">
-                        <strong class="pv-profile-list__label" data-lang="profile_label_email">Email</strong>
-                        <a href="mailto:younsh57@naver.com" class="pv-profile-list__value">younsh57@naver.com</a>
+                    <div class="damso-profile-list__item">
+                        <strong class="damso-profile-list__label" data-lang="profile_label_email">Email</strong>
+                        <a href="mailto:younsh57@naver.com" class="damso-profile-list__value">younsh57@naver.com</a>
                     </div>
                 </div>
             </div>
@@ -182,11 +182,11 @@
     </main>
 
     <!-- Footer -->
-    <footer class="pv-footer">
-        <div class="pv-container">
+    <footer class="damso-footer">
+        <div class="damso-container">
             <p class="render-as-html" data-lang="ui_copyright_text"></p>
             <p><a data-lang-href="ui_footer_credit_url" rel="noopener noreferrer"
-                    data-lang="ui_footer_credit_text">Powered by Provider</a></p>
+                    data-lang="ui_footer_credit_text">Powered by Damso</a></p>
         </div>
     </footer>
 

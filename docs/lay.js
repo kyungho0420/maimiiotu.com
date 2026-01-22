@@ -1,9 +1,12 @@
 const siteConfig = {
     meta: {
+        framework: 'V4',
+        type: 'page',
+        mode: 'demo',
         lang: 'vi'
     },
     api: {
-        provider: true
+        damso: true
     },
     canvas: {
         target: '#overview',
@@ -21,7 +24,9 @@ const siteConfig = {
     ]
 };
 
-// PV4 Initialization
-if (window.PV4) {
-    window.PV4.init(siteConfig);
-}
+// V4 Initialization
+document.addEventListener('DOMContentLoaded', () => {
+    if (window.V4) {
+        window.V4.init(siteConfig);
+    }
+});
