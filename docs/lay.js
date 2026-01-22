@@ -9,7 +9,7 @@ const siteConfig = {
         damso: true
     },
     canvas: {
-        target: '#overview',
+        target: '#home',
         overlay: 'dotted',
 
         // Optional placeholders for user configuration clarity
