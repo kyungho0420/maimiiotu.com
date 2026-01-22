@@ -6,7 +6,7 @@ const siteConfig = {
         lang: 'vi'
     },
     api: {
-        damso: true
+        damso: false
     },
     canvas: {
         target: '#home',
