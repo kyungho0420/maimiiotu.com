@@ -3,12 +3,11 @@
 */
 
 :root {
-    /* Only standard PV4 overrides allowed */
-    --pv-color-primary: #000000;
-    --pv-color-secondary: #495057;
-    --pv-color-surface: #F8F9FA;
-    --pv-color-text: #212529;
-    --pv-font-body: 'Noto Sans KR', sans-serif;
-    --pv-bg-button: var(--pv-color-primary);
-    --pv-text-button: #FFFFFF;
+    --damso-color-primary: #000000;
+    --damso-color-secondary: #495057;
+    --damso-color-surface: #F8F9FA;
+    --damso-color-text: #212529;
+    --damso-font-body: 'Noto Sans KR', sans-serif;
+    --damso-bg-button: var(--damso-color-primary);
+    --damso-text-button: #FFFFFF;
 }
