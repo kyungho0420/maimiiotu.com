@@ -1,18 +1,24 @@
+/**
+ * Maimiiotu
+ */
 const siteConfig = {
     meta: {
         framework: 'V4',
         type: 'page',
         mode: 'live',
-        lang: 'vi'
+        lang: 'vi',
+        theme: true
     },
     api: {
-        damso: false
+        damso: true,
+        turnstile: '0x4AAAAAACJQlCjpqGMqegcx',
+        redirect: '../'
     },
     canvas: {
         target: '#home',
+        effect: '', // No effect specified previously, but canvas object existed.
         overlay: 'dotted',
 
-        // Optional placeholders for user configuration clarity
         image_type: 'cover',
         image_count: 3,
         image_path: './section/',
@@ -20,11 +26,10 @@ const siteConfig = {
     },
     buttons: [
         { name: 'Products', icon: 'trolley', url: '#portfolio' },
-        { name: 'Profile', icon: 'phone', url: '#profile' },
+        { name: 'Profile', icon: 'phone', url: '#profile' }
     ]
 };
 
-// V4 Initialization
 document.addEventListener('DOMContentLoaded', () => {
     if (window.V4) {
         window.V4.init(siteConfig);
