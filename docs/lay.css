@@ -125,6 +125,7 @@ h1, h2, h3, h4, h5, h6 {
 .damso-lang-btn.active {
     background: var(--damso-color-primary);
     color: #FFFFFF !important;
+    border-radius: 4px;
 }
 
 /* Card Overrides (Industrial Matte) */
@@ -210,6 +211,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .damso-form__input:focus, .damso-form__textarea:focus {
+    background: #161618;
     border-color: var(--damso-color-primary);
     outline: none;
 }
