@@ -1,89 +1,97 @@
 /*
     Version: V4
-    Theme: MAI MI IOTU - Premium Deep Vietnam (Single Mode)
+    Theme: MAI MI IOTU - Industrial Sophistication (B2B Professional)
     Last Modified: 2026-04-16
 */
 
 :root {
-    /* Brand Colors (Modern Vietnam - Deep Edition) */
-    --damso-color-primary: #D32F2F;    /* Vietnam Corporate Red */
-    --damso-color-secondary: #FFC107;  /* prosperity Gold */
-    --damso-color-accent: #FF5252;     /* Bright Red Accent for Dark BG */
+    /* Brand Colors (B2B Manufacturing - Sophisticated Burgundy) */
+    --damso-color-primary: #8B0000;    /* Midnight Burgundy */
+    --damso-color-secondary: #A68966;  /* Champagne Gold / Muted Silk */
+    --damso-color-accent: #660000;     /* Deep Shadow Red */
     
-    --damso-color-bg: #121212;         /* Deep Neutral Background */
-    --damso-color-surface: #1E1E1E;    /* Dark Card Surface */
+    --damso-color-bg: #0D0D0E;         /* Deepest Slate Charcoal */
+    --damso-color-surface: #161618;    /* Matte Slate Surface */
     
-    --damso-color-text: #E0E0E0;       /* Light Grey Text for readability */
-    --damso-color-text-weak: #9E9E9E;  /* Muted Grey Text */
-    --damso-color-text-light: #616161; /* Darker Hint Text */
-    --damso-color-border: #2C2C2C;     /* Subtle Border for Dark Surface */
+    --damso-color-text: #D1D1D4;       /* Silk Grey Body Text */
+    --damso-color-text-weak: #7A7A7C;  /* Muted Grey */
+    --damso-color-text-light: #4A4A4C; /* Dark Detail Text */
+    --damso-color-border: #222224;     /* Refined Industrial Border */
 
     /* UI Overrides */
     --damso-bg-button: var(--damso-color-primary);
-    --damso-bg-button-hover: #B71C1C;
+    --damso-bg-button-hover: #660000;
     --damso-text-button: #FFFFFF;
-    --damso-radius: 8px;
+    --damso-radius: 4px; /* Sharper edges for industrial look */
 
-    --bg-navbar: rgba(18, 18, 18, 0.95);
+    --bg-navbar: rgba(13, 13, 14, 0.98);
     --text-navbar: #FFFFFF;
 
     --damso-font-body: 'Noto Sans KR', sans-serif;
     --damso-font-title: 'Montserrat', sans-serif;
 }
 
-/* Typography */
+/* Typography Refinement */
 body {
     font-family: var(--damso-font-body);
-    font-size: 16px;
-    line-height: 1.7;
+    font-size: 15px;
+    line-height: 1.8;
     color: var(--damso-color-text);
     background-color: var(--damso-color-bg);
     margin: 0;
+    -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--damso-font-title);
     font-weight: 700;
-}
-
-h2 {
+    letter-spacing: 0.05em;
     color: #FFFFFF;
 }
 
-/* Header Overrides */
+/* Header Overrides - High-End Corporate Style */
 .damso-header__title {
     font-family: var(--damso-font-title);
-    letter-spacing: 2px;
+    letter-spacing: 0.3em;
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 700;
     color: #FFFFFF;
-    text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    font-size: clamp(2rem, 1.5rem + 4vw, 4.5rem);
+    text-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    margin-bottom: 0.5em;
 }
 
 .damso-header__description {
-    letter-spacing: 1px;
+    letter-spacing: 0.4em;
     text-transform: uppercase;
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.85rem;
+    color: var(--damso-color-secondary); /* Champagne Gold text */
+    font-weight: 500;
+    opacity: 0.9;
 }
 
-/* Language Switcher (Dark Mode Style) */
+/* Navigation */
+.damso-nav__logo {
+    letter-spacing: 0.2em;
+    font-weight: 700;
+}
+
+/* Language Switcher (Minimalist Silk Style) */
 .damso-lang-switcher {
     display: inline-flex;
-    padding: 3px;
-    background: #2C2C2C;
-    border: 1px solid #3A3A3A;
-    border-radius: 30px;
+    padding: 2px;
+    background: #1A1A1C;
+    border: 1px solid #2A2A2C;
+    border-radius: 4px;
 }
 
 .damso-lang-btn {
-    padding: 6px 14px;
-    font-size: 13px;
-    font-weight: 700;
+    padding: 5px 12px;
+    font-size: 11px;
+    font-weight: 600;
     text-decoration: none;
-    color: #9E9E9E;
-    transition: all 0.3s ease;
-    border-radius: 30px;
+    color: #7A7A7C;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .damso-lang-btn:hover {
@@ -95,34 +103,56 @@ h2 {
     color: #FFFFFF !important;
 }
 
-/* Card Overrides (Deep Surface) */
+/* Card Overrides (Industrial Matte) */
 .damso-card {
     border: 1px solid var(--damso-color-border);
     border-radius: var(--damso-radius);
     background: var(--damso-color-surface);
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
     overflow: hidden;
 }
 
 .damso-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-    border-color: var(--damso-color-primary);
+    transform: translateY(-5px);
+    border-color: var(--damso-color-secondary);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
 }
 
 .damso-card__title {
     color: #FFFFFF;
+    font-size: 1.25rem;
+    margin-top: 1rem;
 }
 
 .damso-card__description {
     color: var(--damso-color-text-weak);
+    font-size: 0.95rem;
 }
 
-/* Section Title Highlight */
+/* Section Title Highlight (Muted Sophistication) */
+.damso-section h2 {
+    text-align: center;
+    margin-bottom: 2.5em;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.damso-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 2px;
+    background-color: var(--damso-color-primary);
+}
+
 .damso-section h2 .material-symbols-outlined {
+    display: block;
+    font-size: 2.5rem;
     color: var(--damso-color-secondary);
-    margin-right: 8px;
-    vertical-align: middle;
+    margin: 0 auto 15px;
 }
 
 /* Form Styles */
@@ -130,24 +160,29 @@ h2 {
     background-color: var(--damso-color-primary);
     color: #FFFFFF;
     border-radius: var(--damso-radius);
-    padding: 12px 30px;
+    padding: 14px 40px;
     font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-size: 0.8rem;
     border: none;
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
+    transition: all 0.3s ease;
 }
 
 .damso-btn:hover {
     background-color: var(--damso-bg-button-hover);
-    transform: scale(1.02);
+    letter-spacing: 0.25em;
+    box-shadow: 0 5px 15px rgba(139, 0, 0, 0.3);
 }
 
 .damso-form__input, .damso-form__textarea {
-    border: 1.5px solid #333333;
-    background: #1A1A1A;
+    border: 1px solid #222224;
+    background: #09090A;
     color: #FFFFFF;
     border-radius: var(--damso-radius);
-    padding: 12px;
+    padding: 15px;
+    font-size: 0.9rem;
 }
 
 .damso-form__input:focus, .damso-form__textarea:focus {
@@ -155,36 +190,47 @@ h2 {
     outline: none;
 }
 
-/* Footer Overrides */
+/* Profile List */
+.damso-profile-list__label {
+    color: var(--damso-color-secondary);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* Footer */
 .damso-footer {
-    background-color: #0A0A0A;
-    border-top: 1px solid #1A1A1A;
+    background-color: #050506;
+    padding: 60px 0;
+    border-top: 1px solid #161618;
 }
 
 .damso-footer p {
-    color: #888888;
+    color: var(--damso-color-text-light);
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
 }
 
 .damso-footer a {
-    color: var(--damso-color-primary);
-    font-weight: 600;
+    color: var(--damso-color-text-weak);
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-/* Map */
+.damso-footer a:hover {
+    color: var(--damso-color-primary);
+}
+
+/* Map (Muted Industrial) */
 .damso-card__map {
     width: 100%;
-    height: 450px;
+    height: 480px;
     border: 0;
-    border-radius: var(--damso-radius);
-    filter: invert(0.9) hue-rotate(180deg) grayscale(1);
+    filter: grayscale(1) invert(0.95);
+    opacity: 0.7;
+    transition: opacity 0.3s;
 }
 
-/* Address Block */
-.damso-address-block {
-    background: #1A1A1A;
-    border: 1px solid #2C2C2C;
-    color: #FFFFFF;
-    padding: 20px;
-    border-radius: var(--damso-radius);
-    margin-top: 20px;
+.damso-card__map:hover {
+    opacity: 0.9;
 }
