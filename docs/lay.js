@@ -1,5 +1,5 @@
 /**
- * MAI MI IOTU - Premium Minimal White
+ * MAI MI IOTU - Premium Modern Vietnam
  */
 const siteConfig = {
     meta: {
@@ -7,7 +7,7 @@ const siteConfig = {
         type: 'page',
         mode: 'live',
         lang: 'en',
-        theme: true,
+        theme: false,
         scroll_smooth: true
     },
     api: {
