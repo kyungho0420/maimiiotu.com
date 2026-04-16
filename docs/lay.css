@@ -1,20 +1,22 @@
 /*
     Version: V4
-    Theme: MAI MI IOTU - Premium Modern Vietnam
+    Theme: MAI MI IOTU - Premium Deep Vietnam (Single Mode)
     Last Modified: 2026-04-16
 */
 
 :root {
-    /* Brand Colors (Modern Vietnam) */
+    /* Brand Colors (Modern Vietnam - Deep Edition) */
     --damso-color-primary: #D32F2F;    /* Vietnam Corporate Red */
-    --damso-color-secondary: #FFC107;  /* Prosperity Gold */
-    --damso-color-accent: #B71C1C;     /* Deep Red Accent */
-    --damso-color-bg: #FFFFFF;         /* Clean Background */
-    --damso-color-surface: #F8F9FA;    /* Soft Surface */
-    --damso-color-text: #212121;       /* Deep Charcoal Text */
-    --damso-color-text-weak: #757575;  /* Grey Text */
-    --damso-color-text-light: #BDBDBD; /* Hint Text */
-    --damso-color-border: #EEEEEE;     /* Soft Border */
+    --damso-color-secondary: #FFC107;  /* prosperity Gold */
+    --damso-color-accent: #FF5252;     /* Bright Red Accent for Dark BG */
+    
+    --damso-color-bg: #121212;         /* Deep Neutral Background */
+    --damso-color-surface: #1E1E1E;    /* Dark Card Surface */
+    
+    --damso-color-text: #E0E0E0;       /* Light Grey Text for readability */
+    --damso-color-text-weak: #9E9E9E;  /* Muted Grey Text */
+    --damso-color-text-light: #616161; /* Darker Hint Text */
+    --damso-color-border: #2C2C2C;     /* Subtle Border for Dark Surface */
 
     /* UI Overrides */
     --damso-bg-button: var(--damso-color-primary);
@@ -22,8 +24,8 @@
     --damso-text-button: #FFFFFF;
     --damso-radius: 8px;
 
-    --bg-navbar: rgba(255, 255, 255, 0.95);
-    --text-navbar: var(--damso-color-primary);
+    --bg-navbar: rgba(18, 18, 18, 0.95);
+    --text-navbar: #FFFFFF;
 
     --damso-font-body: 'Noto Sans KR', sans-serif;
     --damso-font-title: 'Montserrat', sans-serif;
@@ -42,7 +44,10 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--damso-font-title);
     font-weight: 700;
-    color: var(--damso-color-primary);
+}
+
+h2 {
+    color: #FFFFFF;
 }
 
 /* Header Overrides */
@@ -51,23 +56,23 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: 800;
-    color: #FFFFFF; /* White on Header Background */
-    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    color: #FFFFFF;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.5);
 }
 
 .damso-header__description {
     letter-spacing: 1px;
     text-transform: uppercase;
     font-size: 1rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.8);
 }
 
-/* Language Switcher */
+/* Language Switcher (Dark Mode Style) */
 .damso-lang-switcher {
     display: inline-flex;
     padding: 3px;
-    background: var(--damso-color-surface);
-    border: 1px solid var(--damso-color-border);
+    background: #2C2C2C;
+    border: 1px solid #3A3A3A;
     border-radius: 30px;
 }
 
@@ -76,13 +81,13 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 13px;
     font-weight: 700;
     text-decoration: none;
-    color: var(--damso-color-text-weak);
+    color: #9E9E9E;
     transition: all 0.3s ease;
     border-radius: 30px;
 }
 
 .damso-lang-btn:hover {
-    color: var(--damso-color-primary);
+    color: #FFFFFF;
 }
 
 .damso-lang-btn.active {
@@ -90,29 +95,34 @@ h1, h2, h3, h4, h5, h6 {
     color: #FFFFFF !important;
 }
 
-/* Card Overrides */
+/* Card Overrides (Deep Surface) */
 .damso-card {
     border: 1px solid var(--damso-color-border);
     border-radius: var(--damso-radius);
-    background: var(--damso-color-bg);
+    background: var(--damso-color-surface);
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
     overflow: hidden;
 }
 
 .damso-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(211, 47, 47, 0.1);
-    border-color: rgba(211, 47, 47, 0.2);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    border-color: var(--damso-color-primary);
 }
 
 .damso-card__title {
-    color: var(--damso-color-primary);
+    color: #FFFFFF;
+}
+
+.damso-card__description {
+    color: var(--damso-color-text-weak);
 }
 
 /* Section Title Highlight */
 .damso-section h2 .material-symbols-outlined {
     color: var(--damso-color-secondary);
     margin-right: 8px;
+    vertical-align: middle;
 }
 
 /* Form Styles */
@@ -124,16 +134,18 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     border: none;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .damso-btn:hover {
     background-color: var(--damso-bg-button-hover);
+    transform: scale(1.02);
 }
 
 .damso-form__input, .damso-form__textarea {
-    border: 1.5px solid var(--damso-color-border);
-    background: #FFFFFF;
+    border: 1.5px solid #333333;
+    background: #1A1A1A;
+    color: #FFFFFF;
     border-radius: var(--damso-radius);
     padding: 12px;
 }
@@ -143,10 +155,14 @@ h1, h2, h3, h4, h5, h6 {
     outline: none;
 }
 
-/* Footer Icon */
+/* Footer Overrides */
 .damso-footer {
-    background-color: var(--damso-color-surface);
-    border-top: 1px solid var(--damso-color-border);
+    background-color: #0A0A0A;
+    border-top: 1px solid #1A1A1A;
+}
+
+.damso-footer p {
+    color: #888888;
 }
 
 .damso-footer a {
@@ -160,4 +176,15 @@ h1, h2, h3, h4, h5, h6 {
     height: 450px;
     border: 0;
     border-radius: var(--damso-radius);
+    filter: invert(0.9) hue-rotate(180deg) grayscale(1);
+}
+
+/* Address Block */
+.damso-address-block {
+    background: #1A1A1A;
+    border: 1px solid #2C2C2C;
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: var(--damso-radius);
+    margin-top: 20px;
 }
