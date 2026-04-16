@@ -26,11 +26,7 @@ const siteConfig = {
         image_format: 'jpg',
         image_slide: 8 // transition interval
     },
-    buttons: [
-        { name: 'Products', icon: 'inventory_2', url: '#portfolio' },
-        { name: 'Profile', icon: 'contact_mail', url: '#profile' },
-        { name: 'Contact', icon: 'mail', url: '#contact' }
-    ]
+    buttons: []
 };
 
 document.addEventListener('DOMContentLoaded', () => {
