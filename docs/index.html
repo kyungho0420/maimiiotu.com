@@ -1,107 +1,111 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO & Metadata -->
-    <title data-lang="home_title">MAI MI IOTU</title>
-    <meta name="description" data-lang="meta_description" content="MAI MI IOTU is a specialized manufacturer of artificial eyelashes offering OEM/ODM services in Vietnam.">
-    <meta property="og:type" content="website">
-    <meta property="og:title" data-lang="og_title" content="MAI MI IOTU | Artificial Eyelash Factory">
-    <meta property="og:description" data-lang="og_description" content="MAI MI IOTU is a specialized manufacturer of artificial eyelashes offering OEM/ODM services in Vietnam.">
-    <meta property="og:image" content="./section/1.jpg">
-    <meta property="og:url" content="https://www.maimiiotu.com">
-    <meta property="og:site_name" content="MAI MI IOTU">
-
+    <title data-i18n="meta_title">MAI MI IOTU - Artificial Eyelash Manufacturer</title>
+    <meta name="description" data-i18n="meta_description"
+        content="MAI MI IOTU is a specialized manufacturer of artificial eyelashes offering OEM/ODM services in Vietnam.">
+    <meta name="keywords" content="eyelash, artificial eyelash, manufacturer, OEM, ODM, Vietnam, MAI MI IOTU">
     <link rel="canonical" href="https://www.maimiiotu.com/">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <meta property="og:type" content="website">
+    <meta property="og:title" data-i18n="home_title" content="MAI MI IOTU - Artificial Eyelash Manufacturer">
+    <meta property="og:description" data-i18n="meta_description"
+        content="MAI MI IOTU is a specialized manufacturer of artificial eyelashes offering OEM/ODM services in Vietnam.">
+    <meta property="og:image" content="./section/1.jpg">
+    <link rel="icon" href="./favicon.ico">
 
-    <!-- [Tier 1] Damso Express Core -->
+    <!-- Fonts: Noto Sans KR & Montserrat -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Damso V4 Core -->
     <link rel="stylesheet" href="https://dev.dam.so/_inc/ex/v4/core/core.css">
     <script src="https://dev.dam.so/_inc/ex/v4/core/core.js"></script>
 
-    <!-- [Tier 2] Damso Express View -->
+    <!-- Damso V4 View: Page -->
     <link rel="stylesheet" href="https://dev.dam.so/_inc/ex/v4/view/page.css">
     <script src="https://dev.dam.so/_inc/ex/v4/view/page.js"></script>
 
-    <!-- [Tier 2.5] Plug-ins (Canvas) -->
+    <!-- Damso V4 Plug: Canvas -->
     <link rel="stylesheet" href="https://dev.dam.so/_inc/ex/v4/plug/canvas.css">
     <script src="https://dev.dam.so/_inc/ex/v4/plug/canvas.js"></script>
 
-    <!-- [Tier 3] User Custom -->
+    <!-- Tier 3: Interior (User Custom) -->
     <link rel="stylesheet" href="./lay.css">
     <script src="./lay.js" defer></script>
 </head>
 
 <body>
-
-    <!-- 0. Navigation (Added) -->
+    <!-- Nav -->
     <nav class="damso-nav">
         <div class="damso-nav__container">
-            <a href="#home" class="damso-nav__logo">MAI MI IOTU</a>
+            <a href="#home" class="damso-nav__logo" data-i18n="home_title">MAI MI IOTU</a>
             <div class="damso-nav__buttons">
-                <div id="lang-switcher">
-                    <button data-lang-set="ko" class="active">KO</button>
-                    <button data-lang-set="en">EN</button>
-                    <button data-lang-set="vi">VI</button>
-                    <button data-lang-set="ja">JA</button>
-                </div>
+                <nav id="lang-switcher" class="damso-lang-switcher">
+                    <a href="?lang=vi" class="damso-lang-btn">VI</a>
+                    <a href="?lang=ko" class="damso-lang-btn">KO</a>
+                    <a href="?lang=en" class="damso-lang-btn">EN</a>
+                    <a href="?lang=ja" class="damso-lang-btn">JA</a>
+                </nav>
             </div>
         </div>
     </nav>
 
-    <!-- 1. Overview (Header) -->
+    <!-- Header -->
     <header id="home" class="damso-header">
         <div class="damso-header__content js-parallax-content">
-            <h1 class="damso-header__title"><strong>MAI MI IOTU</strong></h1>
-            <p class="damso-header__description" data-lang="home_description">Nhà máy sản xuất lông mi giả số lượng lớn</p>
+            <h1 class="damso-header__title">MAI MI IOTU</h1>
+            <p class="damso-header__description" data-i18n="home_description">Mass Production Factory for Artificial Eyelashes</p>
         </div>
     </header>
 
     <main>
-        <!-- 2. Services -->
-        <section id="services" class="damso-section js-fade-in">
-            <div class="damso-container">
-                <h2 class="damso-section__title" data-lang="services_title">
+        <!-- Services -->
+        <section id="services" class="damso-section">
+            <div class="damso-container js-fade-in">
+                <h2>
                     <span translate="no" class="material-symbols-outlined notranslate">factory</span>
-                    Kinh doanh chính
+                    <span data-i18n="services_title">Main Business</span>
                 </h2>
-                <p class="damso-section__description" data-lang="services_desc"></p>
+                <p class="damso-section__description" data-i18n="services_desc">We provide comprehensive manufacturing solutions for B2B clients.</p>
                 <div class="damso-grid damso-grid--cols-2">
                     <div class="damso-card">
                         <div class="damso-card__content">
-                            <h3 class="damso-card__title" data-lang="service_01_title"></h3>
-                            <p class="damso-card__description" data-lang="service_01_desc"></p>
+                            <h3 class="damso-card__title" data-i18n="service_01_title">OEM Manufacturing</h3>
+                            <p class="damso-card__description" data-i18n="service_01_desc">High-quality mass production under your brand.</p>
                         </div>
                     </div>
                     <div class="damso-card">
                         <div class="damso-card__content">
-                            <h3 class="damso-card__title" data-lang="service_02_title"></h3>
-                            <p class="damso-card__description" data-lang="service_02_desc"></p>
+                            <h3 class="damso-card__title" data-i18n="service_02_title">ODM Development</h3>
+                            <p class="damso-card__description" data-i18n="service_02_desc">Innovative designs developed with our own technology.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 3. Portfolio (Products) -->
-        <section id="portfolio" class="damso-section damso-section--secondary js-fade-in">
-            <div class="damso-container">
-                <h2 class="damso-section__title" data-lang="portfolio_title">
+        <!-- Portfolio -->
+        <section id="portfolio" class="damso-section">
+            <div class="damso-container js-fade-in">
+                <h2>
                     <span translate="no" class="material-symbols-outlined notranslate">inventory_2</span>
-                    Sản phẩm chính
+                    <span data-i18n="portfolio_title">Product Lineup</span>
                 </h2>
-                <p class="damso-section__description" data-lang="portfolio_desc"></p>
+                <p class="damso-section__description" data-i18n="portfolio_desc">High quality artificial eyelashes for global markets.</p>
                 <div class="damso-grid damso-grid--cols-2">
                     <div class="damso-card">
                         <div class="damso-card__image-wrapper js-lightbox-trigger">
                             <img src="./section/product1.jpg" alt="Classic Lash" class="damso-card__image">
                         </div>
                         <div class="damso-card__content">
-                            <h4 class="damso-card__title" data-lang="portfolio_01_title"></h4>
-                            <p class="damso-card__description" data-lang="portfolio_01_desc"></p>
+                            <h3 class="damso-card__title" data-i18n="portfolio_01_title">Classic Lash</h3>
+                            <p class="damso-card__description" data-i18n="portfolio_01_desc">Standard products with consistent high quality.</p>
                         </div>
                     </div>
                     <div class="damso-card">
@@ -109,8 +113,8 @@
                             <img src="./section/product2.jpg" alt="Volume Lash" class="damso-card__image">
                         </div>
                         <div class="damso-card__content">
-                            <h4 class="damso-card__title" data-lang="portfolio_02_title"></h4>
-                            <p class="damso-card__description" data-lang="portfolio_02_desc"></p>
+                            <h3 class="damso-card__title" data-i18n="portfolio_02_title">Volume Lash</h3>
+                            <p class="damso-card__description" data-i18n="portfolio_02_desc">Premium line maximizing volume and durability.</p>
                         </div>
                     </div>
                     <div class="damso-card">
@@ -118,8 +122,8 @@
                             <img src="./section/product3.jpg" alt="Special Lash" class="damso-card__image">
                         </div>
                         <div class="damso-card__content">
-                            <h4 class="damso-card__title" data-lang="portfolio_03_title"></h4>
-                            <p class="damso-card__description" data-lang="portfolio_03_desc"></p>
+                            <h3 class="damso-card__title" data-i18n="portfolio_03_title">Special Lash</h3>
+                            <p class="damso-card__description" data-i18n="portfolio_03_desc">Specially designed products meeting specifications.</p>
                         </div>
                     </div>
                     <div class="damso-card">
@@ -127,69 +131,110 @@
                             <img src="./section/product4.jpg" alt="Color Lash" class="damso-card__image">
                         </div>
                         <div class="damso-card__content">
-                            <h4 class="damso-card__title" data-lang="portfolio_04_title"></h4>
-                            <p class="damso-card__description" data-lang="portfolio_04_desc"></p>
+                            <h3 class="damso-card__title" data-i18n="portfolio_04_title">Color Lash</h3>
+                            <p class="damso-card__description" data-i18n="portfolio_04_desc">Various color options for niche markets.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 4. Location -->
+        <!-- Location -->
         <section id="location" class="damso-section">
             <div class="damso-container js-fade-in">
-                <h2><span translate="no" class="material-symbols-outlined notranslate">location_on</span><span
-                        data-lang="section_location_title"></span></h2>
-                <p class="damso-section__description" data-lang="section_location_desc_reservation"></p>
+                <h2>
+                    <span translate="no" class="material-symbols-outlined notranslate">location_on</span>
+                    <span data-i18n="section_location_title">Location</span>
+                </h2>
+                <p class="damso-section__description" data-i18n="section_location_desc_reservation">Our factory is located in Binh Duong, Vietnam.</p>
                 <div class="damso-card">
-                    <!-- Google Map Embed Placeholder -->
                     <iframe
                         src="https://maps.google.com/maps?q=573%20Ho%20Van%20Cong%2CTuong%20Binh%20Hiep%2CThu%20Dau%20Mot%2CBinh%20Duong%2CVietnam&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        class="damso-card__map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="damso-address-block">
-                    <p data-lang="address_text"></p>
+                    <p data-i18n="address_text">573 Ho Van Cong, Zone 8, Tuong Binh Hiep, Thu Dau Mot City, Binh Duong</p>
                 </div>
             </div>
         </section>
 
-        <!-- 5. Profile -->
-        <section id="profile" class="damso-section damso-section--secondary js-fade-in">
-            <div class="damso-container">
-                <h2 class="damso-section__title" data-lang="profile_title">
-                    <span translate="no" class="material-symbols-outlined notranslate">domain</span>
-                    Profile
+        <!-- Profile -->
+        <section id="profile" class="damso-section">
+            <div class="damso-container js-fade-in">
+                <h2>
+                    <span translate="no" class="material-symbols-outlined notranslate">contact_mail</span>
+                    <span data-i18n="section_profile_title">Profile</span>
                 </h2>
-                <p class="damso-section__description" data-lang="profile_desc"></p>
-
+                <p class="damso-section__description" data-i18n="section_profile_desc">Business contact information.</p>
                 <div class="damso-profile-list">
                     <div class="damso-profile-list__item">
-                        <strong class="damso-profile-list__label" data-lang="profile_label_name">Name</strong>
-                        <span class="damso-profile-list__value" data-lang="name_text">Yoon Seok-hoon</span>
+                        <strong class="damso-profile-list__label" data-i18n="profile_label_name">Name</strong>
+                        <span class="damso-profile-list__value" data-i18n="name_text">Yoon Seok-hoon</span>
                     </div>
                     <div class="damso-profile-list__item">
-                        <strong class="damso-profile-list__label" data-lang="profile_label_phone">Phone</strong>
+                        <strong class="damso-profile-list__label" data-i18n="profile_label_phone">Phone</strong>
                         <a href="tel:+84862008886" class="damso-profile-list__value">(+84) 086-200-8886</a>
                     </div>
                     <div class="damso-profile-list__item">
-                        <strong class="damso-profile-list__label" data-lang="profile_label_email">Email</strong>
+                        <strong class="damso-profile-list__label" data-i18n="profile_label_email">Email</strong>
                         <a href="mailto:younsh57@naver.com" class="damso-profile-list__value">younsh57@naver.com</a>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Contact (Standard V4 Section Added) -->
+        <section id="contact" class="damso-section">
+            <div class="damso-container js-fade-in">
+                <h2>
+                    <span translate="no" class="material-symbols-outlined notranslate">mail</span>
+                    <span data-i18n="section_contact_title">Contact Us</span>
+                </h2>
+                <p class="damso-section__description" data-i18n="section_contact_desc">If you have any questions, please feel free to contact us.</p>
+                <form class="damso-form damso-contact-form" autocomplete="off" data-intent="conn.contact">
+                    <input type="email" name="email" required class="damso-form__input"
+                        data-i18n-placeholder="form_placeholder_email" placeholder="Email">
+                    <div class="damso-form__textarea-wrapper">
+                        <textarea name="message" rows="5" required maxlength="5000" class="damso-form__textarea"
+                            data-i18n-placeholder="form_placeholder_msg" placeholder="Message"></textarea>
+                    </div>
+                    <input type="hidden" name="form" value="">
+                    <div id="turnstile-container"></div>
+                    <button type="submit" class="damso-btn">
+                        <span class="damso-form__text" data-i18n="btn_submit">Submit</span>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Search (Standard V4 Section Added) -->
+        <section id="search" class="damso-section">
+            <div class="damso-container js-fade-in">
+                <h2>
+                    <span translate="no" class="material-symbols-outlined notranslate">search</span>
+                    <span data-i18n="section_search_title">Search</span>
+                </h2>
+                <p class="damso-section__description" data-i18n="section_search_desc">Find what you're looking for.</p>
+                <form class="damso-form damso-search-form" autocomplete="off" data-intent="conn.search">
+                    <input type="text" name="key" required class="damso-form__input"
+                        data-i18n-placeholder="form_placeholder_search" placeholder="Search...">
+                    <input type="hidden" name="form" value="">
+                    <button type="submit" class="damso-btn">
+                        <span class="damso-form__text" data-i18n="btn_search">Search</span>
+                    </button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
     <footer class="damso-footer">
         <div class="damso-container">
-            <p class="render-as-html" data-lang="ui_copyright_text"></p>
-            <p><a data-lang-href="ui_footer_credit_url" rel="noopener noreferrer"
-                    data-lang="ui_footer_credit_text">Powered by Damso</a></p>
+            <p class="render-as-html" data-i18n="ui_copyright_text">© 2026 MAI MI IOTU. All Rights Reserved.</p>
+            <p><a data-i18n-href="ui_footer_credit_url" rel="noopener noreferrer"
+                    data-i18n="ui_footer_credit_text">Powered by Damso</a></p>
         </div>
     </footer>
-
 </body>
 
 </html>

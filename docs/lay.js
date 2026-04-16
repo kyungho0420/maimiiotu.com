@@ -1,13 +1,14 @@
 /**
- * Maimiiotu
+ * MAI MI IOTU - Premium Minimal White
  */
 const siteConfig = {
     meta: {
         framework: 'V4',
         type: 'page',
         mode: 'live',
-        lang: 'vi',
-        theme: true
+        lang: 'en',
+        theme: true,
+        scroll_smooth: true
     },
     api: {
         server: 'damso',
@@ -16,17 +17,19 @@ const siteConfig = {
     },
     canvas: {
         target: '#home',
-        effect: '', // No effect specified previously, but canvas object existed.
+        effect: '', 
         overlay: 'dotted',
 
         image_type: 'cover',
         image_count: 3,
         image_path: './section/',
-        image_format: 'jpg'
+        image_format: 'jpg',
+        image_slide: 8 // transition interval
     },
     buttons: [
-        { name: 'Products', icon: 'trolley', url: '#portfolio' },
-        { name: 'Profile', icon: 'phone', url: '#profile' }
+        { name: 'Products', icon: 'inventory_2', url: '#portfolio' },
+        { name: 'Profile', icon: 'contact_mail', url: '#profile' },
+        { name: 'Contact', icon: 'mail', url: '#contact' }
     ]
 };
 
