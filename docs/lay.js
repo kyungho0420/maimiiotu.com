@@ -8,6 +8,8 @@ const siteConfig = {
         mode: 'live',
         lang: 'en',
         theme: false,
+        footer: true,
+        symbol: false,
         scroll_smooth: true
     },
     api: {
