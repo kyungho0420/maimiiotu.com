@@ -1,257 +1,84 @@
 /*
-    Version: V4
-    Theme: MAI MI IOTU - Industrial Sophistication (B2B Professional)
-    Last Modified: 2026-04-16
+    Version: V4.1.0
+    Theme: MAI MI IOTU - Industrial Sophistication
+    Last Modified: 2026-04-27
 */
 
 :root {
-    /* Brand Colors (B2B Manufacturing - Sophisticated Burgundy) */
-    --damso-color-primary: #8B0000;    /* Midnight Burgundy */
-    --damso-color-secondary: #A68966;  /* Champagne Gold / Muted Silk */
-    --damso-color-accent: #660000;     /* Deep Shadow Red */
+    /* Brand Colors (Industrial Burgundy) */
+    --damso-color-primary: #8B0000;
+    --damso-color-secondary: #A68966;
+    --damso-color-accent: #660000;
     
-    --damso-color-bg: #0D0D0E;         /* Deepest Slate Charcoal */
-    --damso-color-surface: #161618;    /* Matte Slate Surface */
+    --damso-color-bg: #0D0D0E;
+    --damso-color-surface: #161618;
     
-    --damso-color-text: #D1D1D4;       /* Silk Grey Body Text */
-    --damso-color-text-weak: #7A7A7C;  /* Muted Grey */
-    --damso-color-text-light: #4A4A4C; /* Dark Detail Text */
-    --damso-color-border: #222224;     /* Refined Industrial Border */
+    --damso-color-text: #D1D1D4;
+    --damso-color-text-weak: #7A7A7C;
+    --damso-color-border: #222224;
 
-    /* UI Overrides */
-    --damso-bg-button: var(--damso-color-primary);
-    --damso-bg-button-hover: #660000;
-    --damso-text-button: #FFFFFF;
-    --damso-radius: 4px; /* Sharper edges for industrial look */
+    /* UI Standard Variables */
+    --damso-btn-color-bg: var(--damso-color-primary);
+    --damso-btn-color-bg-hover: #660000;
+    --damso-btn-color-text: #FFFFFF;
+    --damso-radius: 4px;
 
-    --bg-navbar: rgba(13, 13, 14, 0.98);
-    --text-navbar: #FFFFFF;
+    --damso-nav-bg-color: rgba(13, 13, 14, 0.98);
+    --damso-nav-color-text: #FFFFFF;
 
     --damso-font-body: 'Noto Sans KR', sans-serif;
     --damso-font-title: 'Montserrat', sans-serif;
 }
 
-/* Typography Refinement */
 body {
     font-family: var(--damso-font-body);
     font-size: 15px;
     line-height: 1.8;
-    color: var(--damso-color-text);
     background-color: var(--damso-color-bg);
-    margin: 0;
-    -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--damso-font-title);
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
-}
-
-/* Header Overrides - High-End Corporate Style */
-.damso-header {
-    position: relative;
-    overflow: hidden;
-}
-
-/* Dark Overlay to enhance text visibility against bright images */
-.damso-header::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.8) 100%);
-    z-index: 1;
-}
-
-.damso-header__content {
-    position: relative;
-    z-index: 2;
-}
-
-.damso-header__title {
+/* Header & Brand Identity */
+.brand-logo {
     font-family: var(--damso-font-title);
     letter-spacing: 0.3em;
     text-transform: uppercase;
     font-weight: 700;
     color: #FFFFFF;
     font-size: clamp(2rem, 1.5rem + 4vw, 4.5rem);
-    /* Stronger text shadow for maximum legibility */
     text-shadow: 0 5px 20px rgba(0,0,0,0.8), 0 2px 4px rgba(0,0,0,0.5);
     margin-bottom: 0.5em;
 }
 
-.damso-header__description {
+.brand-slogan {
     letter-spacing: 0.4em;
     text-transform: uppercase;
     font-size: 0.85rem;
-    color: var(--damso-color-secondary); /* Champagne Gold text */
+    color: var(--damso-color-secondary);
     font-weight: 500;
-    opacity: 1; /* Increase opacity for better readability */
     text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
-/* Navigation */
 .damso-nav__logo {
     letter-spacing: 0.2em;
     font-weight: 700;
+    font-family: var(--damso-font-title);
 }
 
-/* Language Switcher (Minimalist Silk Style) */
-.damso-lang-switcher {
-    display: inline-flex;
-    padding: 2px;
-    background: #1A1A1C;
-    border: 1px solid #2A2A2C;
-    border-radius: 4px;
-}
-
-.damso-lang-btn {
-    padding: 5px 12px;
-    font-size: 11px;
-    font-weight: 600;
-    text-decoration: none;
-    color: #7A7A7C;
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.damso-lang-btn:hover {
-    color: #FFFFFF;
-}
-
-.damso-lang-btn.active {
-    background: var(--damso-color-primary);
-    color: #FFFFFF !important;
-    border-radius: 4px;
-}
-
-/* Card Overrides (Industrial Matte) */
+/* Cards (Industrial Matte) */
 .damso-card {
     border: 1px solid var(--damso-color-border);
     border-radius: var(--damso-radius);
     background: var(--damso-color-surface);
-    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-    overflow: hidden;
 }
 
-.damso-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--damso-color-secondary);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
-}
-
-.damso-card__title {
-    color: #FFFFFF;
-    font-size: 1.25rem;
-    margin-top: 1rem;
-}
-
-.damso-card__description {
-    color: var(--damso-color-text-weak);
-    font-size: 0.95rem;
-}
-
-/* Section Title Highlight (Muted Sophistication) */
-.damso-section h2 {
-    text-align: center;
-    margin-bottom: 2.5em;
-    position: relative;
-    padding-bottom: 20px;
-}
-
-.damso-section h2::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40px;
-    height: 2px;
-    background-color: var(--damso-color-primary);
-}
-
-.damso-section h2 .material-symbols-outlined {
-    display: block;
-    font-size: 2.5rem;
-    color: var(--damso-color-secondary);
-    margin: 0 auto 15px;
-}
-
-/* Form Styles */
-.damso-btn {
-    background-color: var(--damso-color-primary);
-    color: #FFFFFF;
-    border-radius: var(--damso-radius);
-    padding: 14px 40px;
-    font-weight: 600;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.damso-btn:hover {
-    background-color: var(--damso-bg-button-hover);
-    letter-spacing: 0.25em;
-    box-shadow: 0 5px 15px rgba(139, 0, 0, 0.3);
-}
-
-.damso-form__input, .damso-form__textarea {
-    border: 1px solid #222224;
-    background: #09090A;
-    color: #FFFFFF;
-    border-radius: var(--damso-radius);
-    padding: 15px;
-    font-size: 0.9rem;
-}
-
-.damso-form__input:focus, .damso-form__textarea:focus {
-    background: #161618;
-    border-color: var(--damso-color-primary);
-    outline: none;
-}
-
-/* Profile List */
-.damso-profile-list__label {
-    color: var(--damso-color-secondary);
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-}
-
-/* Footer */
-.damso-footer {
-    background-color: #050506;
-    padding: 60px 0;
-    border-top: 1px solid #161618;
-}
-
-.damso-footer p {
-    color: var(--damso-color-text-light);
-    font-size: 0.8rem;
-    letter-spacing: 0.05em;
-}
-
-.damso-footer a {
-    color: var(--damso-color-text-weak);
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.damso-footer a:hover {
-    color: var(--damso-color-primary);
+/* Language Switcher Overrides */
+.damso-lang-btn.active {
+    background: var(--damso-color-primary);
+    color: #FFFFFF !important;
 }
 
 /* Map (Muted Industrial) */
 .damso-card__map {
-    width: 100%;
-    height: 480px;
-    border: 0;
     filter: grayscale(1) invert(0.95);
     opacity: 0.7;
     transition: opacity 0.3s;
